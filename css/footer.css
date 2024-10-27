@@ -1,0 +1,11 @@
+/* Footer CSS styles */
+#footer-container {
+  grid-area: footer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  font-size: var(--font-size5);
+  color: var(--background);
+}

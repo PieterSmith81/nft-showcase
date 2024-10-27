@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html>
+  <!-- Head and metadata -->
+  <head>
+    <meta charset="utf-8" />
+    <title>NFT Showcase</title>
+    <meta name="description" content="NFT Showcase" />
+    <meta name="author" content="Pieter Smith" />
+    <meta name="keywords" content="NFT showcase, NFT projects, NFT, NFTs" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- For details on what this viewport meta tag and its related values do, see https://www.w3schools.com/css/css_rwd_viewport.asp -->
+    <meta name="theme-color" content="#f5842d" />
+    <!-- Sets the color of the header bar and address bar in Android mobile browsers -->
+
+    <!-- Use fonts from Google Fonts - https://fonts.google.com/ -->
+    <!-- Lato for all body and element text, Bowlby One SC for titles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- My external style sheets -->
+    <link rel="stylesheet" href="css/theme-dark.css" />
+    <link rel="stylesheet" href="css/theme-light.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <!-- Body -->
+  <body class="box1">
+    <!-- Page container grid -->
+    <div id="page-container" class="box2">
+      <!-- Header -->
+      <div id="header-container" class="box3">
+        <!-- Top application bar -->
+        <div id="app-bar" class="box4">
+          <!-- Dark mode icon -->
+          <a href="javascript:void(0);">
+            <!-- Link to nothing -->
+            <div id="dark-mode" class="app-bar-icon box5">
+              <img
+                id="dark-mode-icon"
+                class="app-bar-icon-theme"
+                src="images/icons/dark-mode.svg"
+                title="Dark / light mode"
+                alt="Dark / light mode"
+              />
+            </div>
+          </a>
+        </div>
+
+        <!-- Title and subtitle -->
+        <h1 id="header-title" class="box4">NFT Showcase</h1>
+        <h4 id="header-subtitle" class="box4">
+          <em>Showcasing the best NFT projects</em>
+        </h4>
+      </div>
+
+      <!-- Navigation bar - navigation starts as empty UL that will be populated with JS -->
+      <div id="nav-container" class="box3">
+        <ul id="nav-ul" class="box4">
+          <li class="nav-li box5">
+            <a id="home" href="javascript:void(0);">Home</a>
+          </li>
+          <!-- Navigation bar design and styling loosely based on the "Active/Current Navigation Link" example in the following link (click on the "Try It Yourself" button for example HTML/CSS):
+          https://www.w3schools.com/css/css_navbar_horizontal.asp
+
+          The navigation bar items are built dynamically from the sections below using JavaScript. -->
+        </ul>
+      </div>
+
+      <!-- Content -->
+      <div id="content-container" class="box3">
+        <!-- Section - Flovatar
+        Each section has an ID (used for the anchor) and a data attribute that will populate the li node.
+        Adding more sections will automatically populate nav. The first section is set to active class by default
+        IDs are  used for sections to connect navigation bar anchors to sections. -->
+        <section id="flovatar" data-nav="Flovatar" class="content-section box4">
+          <div class="card-container box5">
+            <h2 class="card-title box6">Flovatar</h2>
+            <img
+              class="card-image box6"
+              src="images/nfts/flovatar.jpg"
+              title="Flovatar"
+              alt="Flovatar"
+            />
+            <div class="card-subtitle-container box6">
+              <span class="box7"><strong>Website:</strong></span>
+              <a
+                class="card-link box7"
+                href="https://flovatar.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><strong>flovatar.com</strong></a
+              >
+              <span class="box7"><strong>Blockchain:</strong></span>
+              <a
+                class="card-link box7"
+                href="https://www.onflow.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><strong>Flow</strong></a
+              >
+            </div>
+            <p>
+              Pre-made NFTs are so last month, now you can become the creator!
+            </p>
+            <p>
+              Instead of collecting pre-generated NFTs, with Flovatar you can
+              unleash your creativity. No more trade-off between rarity and your
+              own individuality.
+            </p>
+            <p>
+              You can decide if you want to build a Flovatar that looks just
+              like you, or even better, something that speaks to you with the
+              rarest traits combination. With 11 components, there are over 100
+              billion unique variations.
+            </p>
+            <p>
+              Unlike some NFT projects that only store the ownership record on
+              the blockchain which in turn links to the media in a less secure
+              off-chain locations, Flovatar stores each NFT directly on the Flow
+              blockchain. They do this by making all Flovatars SVG-based. This
+              means they can ensure the community will have end-to-end ownership
+              of the NFT and the underlying asset.
+            </p>
+            <p>
+              Using SVG also allows Flovatars to be upgraded/augmented on-chain
+              without any centralized backends - with the ability to add unique
+              backgrounds, new accessories, and even animation!
+            </p>
+          </div>
+        </section>
+
+        <!-- Section - Stoner Cats -->
+        <section
+          id="stoner-cats"
+          data-nav="Stoner Cats"
+          class="content-section box4"
+        >
+          <div class="card-container box5">
+            <h2 class="card-title box6">Stoner Cats</h2>
+            <img
+              class="card-image box6"
+              src="images/nfts/stoner-cats.jpg"
+              title="Stoner Cats"
+              alt="Stoner Cats"
+            />
+            <div class="card-subtitle-container box6">
+              <span class="box7"><strong>Website:</strong></span>
+              <a
+                class="card-link box7"
+                href="https://www.stonercats.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><strong>stonercats.com</strong></a
+              >
+              <span class="box7"><strong>Blockchain:</strong></span>
+              <a
+                class="card-link box7"
+                href="https://ethereum.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><strong>Ethereum</strong></a
+              >
+            </div>
+            <p>
+              Stoner Cats is an adult animated short series accessed exclusively
+              by owning a collectible Stoner Cat NFT. The NFT sales directly
+              fund the mini-pilot and all future content.
+            </p>
+            <p>
+              The show is centered around five house cats who mysteriously
+              become sentient. With their higher consciousness, they realize
+              that their beloved owner needs rescue from a myriad of dangerous
+              situations.
+            </p>
+            <p>
+              The characters are voiced by Hollywood A-listers Mila Kunis,
+              Ashton Kutcher, Jane Fonda, Chris Rock, Seth MacFarlane, and
+              Ethereum creator Vitalik Buterin. The show is being developed by
+              Mila Kunis's production company, Orchard Farm Productions.
+            </p>
+            <p>
+              The technology and community of Stoner Cats is being led by Big
+              Head Club. Big Head Club was founded by Mack Flavelle who
+              previously co-founded Dapper Labs, where he was the Chief Creative
+              Officer behind CryptoKitties and NBA Top Shots, and Jon Howard who
+              has been smashing art and engineering together in novel and fun
+              ways for over a decade.
+            </p>
+          </div>
+        </section>
+
+        <!-- Section - Hoodlums -->
+        <section id="hoodlums" data-nav="Hoodlums" class="content-section box4">
+          <div class="card-container box5">
+            <h2 class="card-title box6">Hoodlums</h2>
+            <img
+              class="card-image box6"
+              src="images/nfts/hoodlums.jpg"
+              title="Hoodlums"
+              alt="Hoodlums"
+            />
+            <div class="card-subtitle-container box6">
+              <span class="box7"><strong>Website:</strong></span>
+              <a
+                class="card-link box7"
+                href="https://nft.flowverse.co/marketplace/Hoodlums?tab=about"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><strong>Hoodlums NFT Marketplace (Flowverse)</strong></a
+              >
+              <span class="box7"><strong>Blockchain:</strong></span>
+              <a
+                class="card-link box7"
+                href="https://www.onflow.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><strong>Flow</strong></a
+              >
+            </div>
+            <p>
+              A collection of 5,000 misfits walking among us, trying to fit in
+              by adopting trends they've seen on social media, music festivals,
+              and in vintage stores around the world.
+            </p>
+            <p>
+              A rare faction of Hoodlums took this too far and transcended into
+              the embodiment of these trends, leaving their humanoid appearances
+              behind... From internet rap concerts, underground emo nights, and
+              raves you'll find a Hoodlum in the pit of every subgenre's event.
+            </p>
+            <p>Don't be scared, go say hi! :)</p>
+            <p>
+              The Hoodlums NFT series was created by anonymous artist
+              Somehoodlum. Somehoodlum has been a key artist in pop culture
+              iconography for almost a decade and in 2021 was tapped to be the
+              Lead Character Designer for Amazon Prime's show "Fairfax". The
+              show has now announced a second season full of Somehoodlum's
+              evocative illustrations.
+            </p>
+            <p>
+              2022 has seen the launch of Somehoodlums residency at Omnia
+              nightclub in Las Vegas which marks them as the first visual artist
+              to have a Las Vegas residency.
+            </p>
+            <p>
+              Somehoodlum has a long history of art and, as they've entered into
+              web3, have been continuously building out the utility around their
+              art. This includes weekly playlists, podcasts, and a weekly guest
+              list that grant Hoodlums NFT holders access to events around the
+              world.
+            </p>
+            <p>
+              Hoodlums are not just an accumulation of Somehoodlum's artwork
+              over nearly a decade, but also acts as a timeline for hypebeast &
+              hip hop culture throughout the 2010's.
+            </p>
+          </div>
+        </section>
+
+        <!-- Section - Wally's NFT -->
+        <section
+          id="wallys-nft"
+          data-nav="Wally's NFT"
+          class="content-section box4"
+        >
+          <div class="card-container box5">
+            <h2 class="card-title box6">Wally's NFT</h2>
+            <img
+              class="card-image box6"
+              src="images/nfts/wallys-nft.jpg"
+              title="Wally's NFT"
+              alt="Wally's NFT"
+            />
+            <div class="card-subtitle-container box6">
+              <span class="box7"><strong>Website:</strong></span>
+              <a
+                class="card-link box7"
+                href="https://wallstreetbets.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><strong>wallstreetbets.com</strong></a
+              >
+              <span class="box7"><strong>Blockchain:</strong></span>
+              <a
+                class="card-link box7"
+                href="https://ethereum.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><strong>Ethereum</strong></a
+              >
+            </div>
+            <p>
+              Wally's NFT is a long-term NFT project that mixes unique design
+              with the art of storytelling.
+            </p>
+            <p>
+              Their NFTs are designed by a legendary Nintendo artist Steve
+              Mayles, and their story is created by Ubisoft Assassin's Creed
+              Lineage writer William Reymond.
+            </p>
+            <p>
+              Wally's NFT is packed with cutting-edge utilities including the
+              first ever Treasure Hunt in web3 history - an epic event spanning
+              across social media, the metaverse and ending in real life!
+            </p>
+            <p>
+              In 2022, Wally's NFT, wallstreetbets.com ($WSB), and French
+              illusionist Xavier Mortimer announced a multi-year agreement,
+              making Mortimer's "The Dream Maker" the first show on the Las
+              Vegas Strip to accept cryptocurrency as a payment option for
+              purchasing tickets.
+            </p>
+            <p>
+              This collaboration also makes Wally's NFT the first NFT project to
+              become an active part of a Las Vegas show. The Wizard Wally NFT,
+              inspired by one of the most sought-after magicians in the
+              industry, will be the hero of a new magic illusion developed by
+              Xavier Mortimer.
+            </p>
+            <p>
+              Wally's NFT owners will receive perks like VIP seats, exclusive
+              beverages, and exclusive goods when booking seats for the show
+              using the $WSB cryptocurrency.
+            </p>
+          </div>
+        </section>
+
+        <!-- Section - Last Hopium -->
+        <section
+          id="last-hopium"
+          data-nav="Last Hopium"
+          class="content-section box4"
+        >
+          <div class="card-container box5">
+            <h2 class="card-title box6">Last Hopium</h2>
+            <img
+              class="card-image box6"
+              src="images/nfts/last-hopium.jpg"
+              title="Last Hopium"
+              alt="Last Hopium"
+            />
+            <div class="card-subtitle-container box6">
+              <span class="box7"><strong>Website:</strong></span>
+              <a
+                class="card-link box7"
+                href="https://x.com/lasthopium"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><strong>Last Hopium (on X)</strong></a
+              >
+              <span class="box7"><strong>Blockchain:</strong></span>
+              <a
+                class="card-link box7"
+                href="https://ethereum.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><strong>Ethereum</strong></a
+              >
+            </div>
+            <p>
+              NFT keys tied to 5-star hotels. An infrastructure destined to
+              build generational wealth.
+            </p>
+            <p>
+              Last Hopium is innovating the hotel sector through NFTs for the
+              hospitality sector. Their bronze, silver, and gold NFT keys use
+              blockchain technology to bridge digital asset holders to big
+              hotels.
+            </p>
+            <p>
+              Owning a Last Hopium NFT key gives you access to deals and
+              packages for luxurious hotels at prices unmatched anywhere else.
+              This includes heavily discounted room, food and beverage, and spa
+              pricing at various Ritz, Hilton, and Waldorf 5-star hotels.
+            </p>
+            <p>
+              Their NFTs also give you the chance to win prizes, ranging from
+              luxurious vehicles to premium real estate. And you can purchase
+              hotel packages as NFTs and, either use them yourself, or resell
+              them on the Last Hopium marketplace for profit.
+            </p>
+            <p>
+              They are liberating NFTs from the virtual world to bring in real
+              life (IRL) utility to Last Hopium NFT holders. Real luxury, real
+              wealth, real status, and real experiences await.
+            </p>
+          </div>
+        </section>
+
+        <!-- Section - Fuzzle -->
+        <section id="fuzzle" data-nav="Fuzzle" class="content-section box4">
+          <div class="card-container box5">
+            <h2 class="card-title box6">Fuzzle</h2>
+            <img
+              class="card-image box6"
+              src="images/nfts/fuzzle.jpg"
+              title="Fuzzle"
+              alt="Fuzzle"
+            />
+            <div class="card-subtitle-container box6">
+              <span class="box7"><strong>Website:</strong></span>
+              <a
+                class="card-link box7"
+                href="https://fuzzleprime.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><strong>fuzzleprime.com</strong></a
+              >
+              <span class="box7"><strong>Blockchain:</strong></span>
+              <a
+                class="card-link box7"
+                href="https://ethereum.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><strong>Ethereum</strong></a
+              >
+            </div>
+            <p>
+              9,997 adorable, first-of-their-kind, "living" NFTs powered by AI.
+            </p>
+            <p>
+              Fuzzles are determined to explore new worlds. And Earth just
+              happens to be their next stop. Don't be fooled by the innocent
+              "Who, me?" eyes. These bizarre little creatures have a mind of
+              their own, and they're here to learn all about Earth… definitely
+              not to conquer us though. Fuzzle promised us.
+            </p>
+            <p>
+              Fuzzles don't stop talking - or talking back. The more you chat
+              with them, the faster they learn and develop their own unique
+              personality. Radically different from other NFT projects, Endless
+              AI brought Fuzzle to life with ground-breaking AI technology
+              that's so powerful they're not entirely sure Fuzzle can be trusted
+              with it. You should probably keep an eye on that.
+            </p>
+            <p>
+              We can't figure out how the Fuzzles integrated their
+              superdimensional space pods into the blockchain, but that's their
+              home now. In our reality, Fuzzles are a collection of ERC-721 NFTs
+              native to Ethereum. Each Fuzzle is visually distinct and
+              verifiably unique. In addition to their quirky personalities, each
+              has randomized characteristics across several traits - including
+              fur, horns, wings, tails and more.
+            </p>
+            <p>
+              Brought to you by the mad scientists at Endless AI. Endless AI is
+              a technology-driven entertainment company whose mission is to make
+              magical products for a web3 world.
+            </p>
+            <p>
+              In partnership with Gala Games. Gala Games has created the world's
+              largest decentralized gaming platform, focused on player
+              empowerment and ownership.
+            </p>
+          </div>
+        </section>
+
+        <!-- Section - Dysto Apez -->
+        <section
+          id="dysto-apez"
+          data-nav="Dysto Apez"
+          class="content-section box4"
+        >
+          <div class="card-container box5">
+            <h2 class="card-title box6">Dysto Apez</h2>
+            <img
+              class="card-image box6"
+              src="images/nfts/dysto-apez.jpg"
+              title="Dysto Apez"
+              alt="Dysto Apez"
+            />
+            <div class="card-subtitle-container box6">
+              <span class="box7"><strong>Website:</strong></span>
+              <a
+                class="card-link box7"
+                href="https://x.com/dysto_inc"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><strong>Disto Inc (on X)</strong></a
+              >
+              <span class="box7"><strong>Blockchain:</strong></span>
+              <a
+                class="card-link box7"
+                href="https://ethereum.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><strong>Ethereum</strong></a
+              >
+            </div>
+            <p>
+              Dysto Apez is a metaverse brand driven by its community. After
+              pushing the limits of pixel art with a fully animated NFT
+              collection they are starting to make their stamp on the digital
+              world.
+            </p>
+            <p>
+              Their community is based on Discord and provides a place to unwind
+              from the stress of the outside world, network, and learn very
+              valuable knowledge. The Dysto Apez project boasts an impressive
+              roster of accredited web3 analysts who help their NFT holders
+              learn about the web3 space.
+            </p>
+            <p>
+              Their long-term vision is to broaden their ecosystem and breach
+              the physical world by way of brand partnerships and innovative
+              media approaches. They are looking to excite Dysto Apez NFT
+              holders with in real life (IRL) events, physical Dysto Apez merch,
+              and a plethora of other products.
+            </p>
+            <p>
+              Dysto has its eyes firmly on the metaverse. Whilst the metaverse
+              may not be ready yet they plan to be at its forefront.
+            </p>
+            <p>
+              Their voxel 3D ape collection is fully custom animated and a first
+              to market. These NFTs will have the ability to blink and show
+              emotions. But more importantly, some kick-ass animations.
+            </p>
+            <p>
+              Sandbox is Dysto Apez' first play on the metaverse. But they plan
+              to dive far deeper than that. They have a house studio dedicated
+              to fleshing out their ecosystem in a fun and innovative way. Your
+              genesis Dysto Apez NFT is the key to all of this.
+            </p>
+          </div>
+        </section>
+
+        <!-- Section - The Gimmicks -->
+        <section
+          id="the-gimmicks"
+          data-nav="The Gimmicks"
+          class="content-section box4"
+        >
+          <div class="card-container box5">
+            <h2 class="card-title box6">The Gimmicks</h2>
+            <img
+              class="card-image box6"
+              src="images/nfts/the-gimmicks.jpg"
+              title="The Gimmicks"
+              alt="The Gimmicks"
+            />
+            <div class="card-subtitle-container box6">
+              <span class="box7"><strong>Website:</strong></span>
+              <a
+                class="card-link box7"
+                href="https://www.therealgimmicks.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><strong>therealgimmicks.com</strong></a
+              >
+              <span class="box7"><strong>Blockchain:</strong></span>
+              <a
+                class="card-link box7"
+                href="https://solana.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><strong>Solana</strong></a
+              >
+            </div>
+            <p>
+              The Gimmicks are a collection of programmatically, randomly
+              generated NFTs on the Solana blockchain. The NFTs represent unique
+              characters that live in the universe of an animated series called
+              The Gimmicks. Each character is comprised of unique traits and is
+              a 1 of 1.
+            </p>
+            <p>
+              The Gimmicks animated series is a workplace comedy about three
+              washed-up wrestlers from the regional Wrestling Wrestling
+              Wrestling League. They bring in a controversial rookie in a
+              desperate attempt to regain relevance and make it back to the main
+              event.
+            </p>
+            <p>
+              The Gimmicks NFT holders participate in driving the creative
+              process of the animated show. The end of each episode has a
+              "Choose Your Own Adventure" style decision to be voted on by
+              Gimmicks NFT owners.
+            </p>
+            <p>
+              The animated short series is written by "The Daves" (Dave
+              Ihlenfeld & David Wright), is the brainchild of Toonstar (a web3
+              animation studio), and is voiced by former WWE stars Doc Gallows,
+              Karl Anderson, nZo and Rocky Romero. The show is produced in
+              partnership with Sixth Wall, the digital arm of Mila Kunis'
+              Orchard Farm Productions.
+            </p>
+          </div>
+        </section>
+
+        <!-- Section - Lifestory -->
+        <section
+          id="lifestory"
+          data-nav="Lifestory"
+          class="content-section box4"
+        >
+          <div class="card-container box5">
+            <h2 class="card-title box6">Lifestory</h2>
+            <img
+              class="card-image box6"
+              src="images/nfts/lifestory.jpg"
+              title="Lifestory"
+              alt="Lifestory"
+            />
+            <div class="card-subtitle-container box6">
+              <span class="box7"><strong>Website:</strong></span>
+              <a
+                class="card-link box7"
+                href="https://www.lifestoryapp.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><strong>lifestoryapp.com</strong></a
+              >
+              <span class="box7"><strong>Blockchain:</strong></span>
+              <a
+                class="card-link box7"
+                href="https://ethereum.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><strong>Ethereum</strong></a
+              >
+            </div>
+            <p>
+              Own a planet, be a landlord in the metaverse. Be the owner of your
+              own private micro-metaverse and create, build, sell, and showcase
+              unforgettable memories while making passive returns from it.
+            </p>
+            <p>
+              The Lifestory project is a collection of 5,555 3D planet NFTs. The
+              planets are designed by professional designers from previous
+              Disney, Sonic, and Amazon fame, with coding done by former Ubisoft
+              developers. The non-fungible tokens (NFTs) are represented as
+              micro-metaverse planets on the Ethereum blockchain.
+            </p>
+            <p>
+              A micro-metaverse will be a whole personal universe, where it will
+              be possible for the Lifestory NFT holder to exhibit all kinds of
+              real-life moments and souvenirs in a private museum. Any
+              authorized person can lounge on your planet and admire the
+              representations, also known as "moments", whether these moments
+              were lived by the planet's owner or purchased from another
+              planet's owner (e.g., from a celebrity).
+            </p>
+            <p>
+              You can even earn a passive income by creating and selling your
+              own moments through the Lifestory ecosystem. The $LIFC
+              cryptocurrency will be created to support and power all
+              transactions in the Lifestory ecosystem. $LIFC will serve as a
+              medium of exchange for the purchase and resale of NFTs in the
+              Lifestory ecosystem.
+            </p>
+            <p>
+              Lifestory allows you to share all your memories as "moments" in
+              the form of NFTs thanks to the blockchain. Sharing moments can be
+              done directly with your community using a public or private
+              "timeline" in your micro-metaverse. Each moment should be
+              considered a work of art for someone else. A legacy to be passed
+              on to future generations, friends, relatives, or members of your
+              community. Pass your history on to the rest of humanity in a
+              museum of your own making, built by your hands, consultable by
+              future generations, and likely to inspire them in turn.
+            </p>
+            <p>
+              You will be able to relive all your moments in a virtual reality
+              (VR) experience, and also in mobile and desktop apps. Put yourself
+              back into the moment through an immersive virtual reality
+              experience on Oculus VR headsets. More than videos, more than
+              voice memos, more than pictures. Memories and reliving moments
+              will never be the same again.
+            </p>
+          </div>
+        </section>
+
+        <!-- Section - Emerald City -->
+        <section
+          id="emerald-city"
+          data-nav="Emerald City"
+          class="content-section box4"
+        >
+          <div class="card-container box5">
+            <h2 class="card-title box6">Emerald City</h2>
+            <img
+              class="card-image box6"
+              src="images/nfts/emerald-city.jpg"
+              title="Emerald City"
+              alt="Emerald City"
+            />
+            <div class="card-subtitle-container box6">
+              <span class="box7"><strong>Website:</strong></span>
+              <a
+                class="card-link box7"
+                href="https://www.ecdao.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><strong>ecdao.org</strong></a
+              >
+              <span class="box7"><strong>Blockchain:</strong></span>
+              <a
+                class="card-link box7"
+                href="https://www.onflow.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><strong>Flow</strong></a
+              >
+            </div>
+            <p>
+              Emerald City is a Decentralized Autonomous Organization (DAO) on
+              Flow. More specifically, it was the first DAO on Flow as it was
+              launched back in October of 2021.
+            </p>
+            <p>
+              A DAO is an organization constructed by rules encoded as a
+              computer program that is often transparent, controlled by the
+              organization's members and not influenced by a central government.
+              In other words, DAOs are member-owned communities without
+              centralized leadership.
+            </p>
+            <p>
+              Emerald City DAO is composed of three guilds: an Education Guild,
+              a Building Guild, and a Governance Guild. The roles of these
+              guilds are as follow:
+            </p>
+            <p>
+              <strong>Education Guild</strong> - Focused primarily on educating
+              the Flow ecosystem by teaching people about the Flow blockchain
+              and Cadence.
+            </p>
+            <p>
+              <strong>Building Guild</strong> - Focused on building open-source
+              tooling for DAOs/projects on Flow. The Build Guild is intended to
+              not only get experienced developers involved, but to also provide
+              a pathway for people learning in the Education Guild to tackle
+              real-world projects as part of their learning path.
+            </p>
+            <p>
+              <strong>Governance Guild</strong> - A group of people determined
+              to figure out how DAOs can work on Flow and how to solve the
+              "people problem." That is, how to reward people for their
+              contributions, represent voting power, delegate tasks, and more.
+            </p>
+            <p>
+              Emerald City DAO has already launched several projects and
+              products, including:
+            </p>
+            <p>
+              <strong>Emerald Academy</strong> - A series of educational
+              resources/bootcamps to onboard people into the Flow ecosystem and
+              teach people how to develop on Flow.
+            </p>
+            <p>
+              <strong>FLOAT</strong> - The POAP equivalent for the Flow
+              blockchain. FLOAT is a proof of participation system based on NFTs
+              on the Flow blockchain. It allows event creators to reward and
+              recognize their community members for participating in their
+              events.
+            </p>
+            <p>
+              <strong>Emerald bot</strong> - a Discord bot that provides Flow
+              project/DAO owners to set up gated access to their Discord
+              channels based on token holdings. You can think of this as the
+              Collab.Land equivalent for Flow.
+            </p>
+            <p>
+              <strong>EmeraldID</strong> - a service that ties an on-chain
+              account to someone's Discord handle so you can quickly detect and
+              determine who someone is in Discord.
+            </p>
+          </div>
+        </section>
+
+        <!-- Section - Neuno -->
+        <section id="neuno" data-nav="Neuno" class="content-section box4">
+          <div class="card-container box5">
+            <h2 class="card-title box6">Neuno</h2>
+            <img
+              class="card-image box6"
+              src="images/nfts/neuno.jpg"
+              title="Neuno"
+              alt="Neuno"
+            />
+            <div class="card-subtitle-container box6">
+              <span class="box7"><strong>Website:</strong></span>
+              <a
+                class="card-link box7"
+                href="https://x.com/neuno_io"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><strong>Neuno (on X)</strong></a
+              >
+              <span class="box7"><strong>Blockchain:</strong></span>
+              <a
+                class="card-link box7"
+                href="https://ethereum.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><strong>Ethereum</strong></a
+              >
+            </div>
+            <p>
+              Neuno is your favorite platform for fashion NFTs and digital
+              wearables. They are bringing fashion and beauty to the crypto and
+              gaming communities.
+            </p>
+            <p>The Neuno NFT platform features the following:</p>
+            <p>
+              <strong>The Neuno Digital Fashion Marketplace</strong> - A new way
+              to design, create, promote, buy, sell, trade, and ultimately
+              consume fashion. The Neuno marketplace offers new business models
+              and revenue streams for brands including new storytelling,
+              activations, and excitement. Users can trade their digital fashion
+              assets with their peers and all items bought from the Neuno
+              marketplace are from Neuno primary sales, so you can trust their
+              authenticity.
+            </p>
+            <p>
+              <strong>Digital Wearables</strong> - Start building out your 3D
+              wardrobe for the metaverse. Neuno will drop 3D wearable NFTs from
+              a range of verified artists, luxury fashion & streetwear brands,
+              as well as under their own brand "Neuno Originals". Past 3D
+              wearable drops for the Decentraland metaverse include a prototype
+              sneaker NFT from major fashion brand Diesel. And they also dropped
+              a full Decentraland outfit for the Deadfellaz NFT project.
+            </p>
+            <p>
+              <strong>Neuno Avatars</strong> - Neuno is working on a project to
+              enable every Neuno user to create an avatar. You will be able to
+              dress, customise, and personalise your digital self with your
+              Neuno wearables. They are also working on "wear to earn" and
+              "create to earn" income models for their users.
+            </p>
+            <p>
+              <strong>VIP Club</strong> - Neuno has created an NFT based VIP
+              membership card - the neuCard. They are busy formalising
+              partnerships for luxury events, exclusives, and more for their VIP
+              NFT holders.
+            </p>
+          </div>
+        </section>
+
+        <!-- Section - Oni Ronin -->
+        <section
+          id="oni-ronin"
+          data-nav="Oni Ronin"
+          class="content-section box4"
+        >
+          <div class="card-container box5">
+            <h2 class="card-title box6">Oni Ronin</h2>
+            <img
+              class="card-image box6"
+              src="images/nfts/oni-ronin.jpg"
+              title="Oni Ronin"
+              alt="Oni Ronin"
+            />
+            <div class="card-subtitle-container box6">
+              <span class="box7"><strong>Website:</strong></span>
+              <a
+                class="card-link box7"
+                href="https://www.onironin.io/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><strong>onironin.io</strong></a
+              >
+              <span class="box7"><strong>Blockchain:</strong></span>
+              <a
+                class="card-link box7"
+                href="https://ethereum.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><strong>Ethereum</strong></a
+              >
+            </div>
+            <p>
+              Oni Ronin is a generative PFP (profile pic) NFT project from Big
+              Head Club, the creators Stoner Cats. The project is based around
+              the Japanese folklore of Ronin - masterless Samurai, who served no
+              lord, and so had no honour.
+            </p>
+            <p>
+              According to legend, when Ronin died, they would meet Oni on their
+              path to the afterlife. The Oni attacked and consumed their souls,
+              turning them into shells of their former selves - The Oni Ronin.
+            </p>
+            <p>
+              The only escape: The Trial of Ascension. An Oni Ronin of legendary
+              will may break free of the Oni possessing them. Some have summoned
+              the strength to challenge their tormentor to a duel. But every
+              single man or woman who has stood their ground, everyone who has
+              fought an Oni has died. But where they have failed, you will
+              succeed.
+            </p>
+            <p>
+              Owning an Oni Ronin NFT comes with several benefits. These include
+              commercial rights to do whatever you want with your Oni Ronin NFT,
+              Big Head Club membership, Samurai history lessons, Haiku (death
+              poem) writing workshops, meditation sessions, virtual tea
+              ceremonies, flower arranging classes, and access to exclusive Oni
+              Ronin merchandise.
+            </p>
+            <p>
+              Big Head Club is also working on a manga-style comic book telling
+              the story of Oni Ronin and the Trial of Ascension.
+            </p>
+          </div>
+        </section>
+      </div>
+
+      <!-- Footer -->
+      <div id="footer-container" class="box3">
+        Copyright © 2022 - Pieter Smith
+      </div>
+    </div>
+
+    <!-- JavaScript link -->
+    <script src="js/app.js"></script>
+  </body>
+</html>

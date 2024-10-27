@@ -1,0 +1,112 @@
+/* Content CSS styles */
+#content-container {
+  grid-area: main-content;
+  display: grid;
+  grid-template-columns: 1fr; /* Grid with one column. Default for smaller/mobile screens. See related responsive page layouts for wider screens at the bottom of this files */
+  grid-template-rows: none; /* Setting this CSS property to none (it's default value) means there is no explicit grid rows defined. Any rows will be implicitly generated and their size will be determined by the grid-auto-rows property. */
+  grid-auto-rows: min-content; /* Row height adjusts according to the height of its content */
+  grid-gap: 24px;
+  background-color: var(--background);
+  padding: 24px;
+}
+
+.content-section {
+  scroll-margin-top: 8px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  display: flex;
+  flex-direction: row;
+  font-family: "Bowlby One SC", sans-serif, cursive;
+  text-shadow: 3px 3px var(--on-background);
+  background-color: var(--primary);
+  color: var(--background);
+  padding: 8px 16px 8px 16px; /* Shorthand property for setting padding-top, padding-right, padding-bottom, and padding-left in a single declaration (and in a clockwise direction) */
+  margin: 0 -4px 8px 4px; /* Top, right, bottom, left */
+  text-decoration: none;
+  -webkit-transform: skewX(-10deg);
+  -moz-transform: skewX(-10deg);
+  -o-transform: skewX(-10deg);
+  -ms-transform: skewX(-10deg);
+  transform: skewX(-10deg);
+}
+
+.card-title-active {
+  background-color: var(--on-background);
+}
+
+.card-image {
+  max-width: 100%; /* Shrinks the image to fit to the CSS grid column's width */
+  margin-bottom: 16px;
+  filter: none;
+}
+
+.card-image-active {
+  filter: var(--card-image-highlight-filter);
+}
+
+.card-subtitle-container {
+  display: grid;
+  grid-template-columns: min-content auto;
+  grid-gap: 8px;
+}
+
+.card-link {
+  color: var(--primary);
+}
+
+.card-container p {
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+
+/* Responsive page layout for wider screens, i.e. for tables and monitors */
+@media (min-width: 540px) {
+  #content-container {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* Grid with two columns for screens wider than 540px */
+  }
+}
+
+@media (min-width: 1080px) {
+  #content-container {
+    grid-template-columns: repeat(
+      3,
+      1fr
+    ); /* Grid with three columns for screens wider than 1080px */
+  }
+}
+
+@media (min-width: 1920px) {
+  #content-container {
+    grid-template-columns: repeat(
+      4,
+      1fr
+    ); /* Grid with four columns for screens wider than 1920px */
+  }
+}
+
+@media (min-width: 2560px) {
+  #content-container {
+    grid-template-columns: repeat(
+      6,
+      1fr
+    ); /* Grid with six columns for screens wider than 2560px */
+  }
+}
+
+@media (min-width: 3840px) {
+  #content-container {
+    grid-template-columns: repeat(
+      8,
+      1fr
+    ); /* Grid with eight columns for screens wider than 3840px */
+  }
+}

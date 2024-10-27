@@ -1,0 +1,101 @@
+/* CSS file imports */
+/* @import url("theme-light.css"); */ /* moved to a style sheet link in the html files to get dark/light mode to work by pressing a button */
+@import url("header.css");
+@import url("navigation.css");
+@import url("content.css");
+@import url("footer.css");
+
+/* Global CSS styles */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--primary);
+  color: var(--on-background);
+  font-family: "Lato", sans-serif;
+  font-size: var(--font-size-normal);
+
+  /*
+        CSS properties below fixes the blue tap highlight color that occurs when you click a link/image with link on mobile browsers.
+        See the second answer here for the fix: https://stackoverflow.com/questions/21003535/anyway-to-prevent-the-blue-highlighting-of-elements-in-chrome-when-clicking-quic
+    */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: var(--font-size1);
+  margin: 0;
+}
+
+h2 {
+  font-size: var(--font-size2);
+  margin: 0;
+}
+
+h3 {
+  font-size: var(--font-size3);
+  margin: 0;
+}
+
+h4 {
+  font-size: var(--font-size4);
+  margin: 0;
+}
+
+/*
+    Responsive page layout for narrow screens, i.e. for mobile phones.
+    See the related @media breakpoints at the bottom of this stylesheet.
+    The @media breakpoints at the bottom of this stylesheet adjusts the page containter layout to be compatible/responsive with wider screens, i.e. tablets and monitors.
+*/
+#page-container {
+  display: grid;
+  grid-template-columns: 100%; /* Grid with one column */
+  grid-template-rows: 250px min-content auto 32px; /* And four rows */
+  grid-template-areas:
+    "header"
+    "navigation"
+    "main-content"
+    "footer";
+  /*
+        Important CSS rule below. The "min-height: 100vh" rule stretches your page containter to always fill the entire height of your viewport.
+        Without this, your page container (and importantly your footer row), might be located in the middle of the page if the page content doesn't fill the entire viewport vertically.
+        To test that your page container's height is stretching as required and that your footer row is at the bottom of the page, zoom the page out in your web browser until the content no longer fills the entire viewport vertically.
+        Even when zoomed out heavily, your page containter should fill the entire height of the viewport and your footer row should remain at the bottom of the page.
+    */
+  min-height: 100vh;
+}
+
+/*
+    IMPORTANT - Change all the 0px border width values below to 1px to see all your grid and flex boxes.
+    This is very handy for element positioning and alignment.
+*/
+.box1 {
+  border: 0px solid yellow;
+}
+
+.box2 {
+  border: 0px solid red;
+}
+
+.box3 {
+  border: 0px solid green;
+}
+
+.box4 {
+  border: 0px solid blue;
+}
+
+.box5 {
+  border: 0px solid cyan;
+}
+
+.box6 {
+  border: 0px solid purple;
+}
+
+.box7 {
+  border: 0px solid lime;
+}

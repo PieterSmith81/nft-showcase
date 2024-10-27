@@ -1,0 +1,68 @@
+/*
+    Using the CSS variables (part of CSS custom properties) as documented here:
+    https://developer.mozilla.org/en-US/docs/Web/CSS/--*
+
+    Theme colors obtained from Google's Meterial Design 3 Theme Builder here:
+    https://material-foundation.github.io/material-theme-builder/#/custom
+
+    Basic implementation of CSS variables:
+        In CSS, you can declare your variables in the root block:
+        :root {
+        --main-bg-color: #1596A7;
+        }
+
+        And implement it using with the var() method:
+        .panel-header {
+            background: var(--main-bg-color);
+            color: ...
+    }
+*/
+
+:root {
+  --primary: #f5842d;
+  --on-primary: #ffffff;
+  --primary-container: #ffdbc4;
+  --on-primary-container: #321300;
+  --secondary: #755846;
+  --on-secondary: #ffffff;
+  --secondary-container: #ffdbc4;
+  --on-secondary-container: #2b1709;
+  --tertiary: #616134;
+  --on-tertiary: #ffffff;
+  --tertiary-container: #e7e6ad;
+  --on-tertiary-container: #1d1d00;
+  --error: #ba1b1b;
+  --on-error: #ffffff;
+  --error-container: #ffdad4;
+  --on-error-container: #410001;
+  --outline: #85746b;
+  --background: #fcfcfc;
+  --on-background: #201a17;
+  --surface: #fcfcfc;
+  --on-surface: #201a17;
+  --surface-variant: #f4ded3;
+  --on-surface-variant: #52443c;
+  --inverse-surface: #362f2b;
+  --inverse-on-surface: #faeee8;
+
+  /* My additions below */
+  --font-size1: 44px;
+  --font-size2: 32px;
+  --font-size3: 24px;
+  --font-size4: 18px;
+  --font-size-normal: 16px;
+  --font-size5: 12px;
+
+  --header-background-image: url("../images/header-light.png");
+
+  /*
+        CSS filters below are used to dynamically change the svg image color.
+        see: https://stackoverflow.com/questions/22252472/how-to-change-the-color-of-an-svg-element
+        and: "Target color" field at: https://codepen.io/sosuke/pen/Pjoqqp
+    */
+  --header-icon-filter: invert(58%) sepia(24%) saturate(3904%)
+    hue-rotate(343deg) brightness(107%) contrast(92%); /* Target color: --primary */
+  --header-icon-filter-hover: invert(100%) sepia(2%) saturate(814%)
+    hue-rotate(203deg) brightness(118%) contrast(100%); /* Target color: --on-secondary */
+  --card-image-highlight-filter: saturate(160%);
+}

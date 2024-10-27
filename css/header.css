@@ -1,0 +1,84 @@
+/* Header CSS styles */
+#header-container {
+  grid-area: header;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: top;
+  background-image: var(--header-background-image);
+  background-size: auto 250px;
+  background-position-x: 40%;
+  background-repeat: no-repeat;
+  padding: 16px;
+}
+
+#app-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: top;
+  justify-content: flex-end;
+  margin-bottom: 48px;
+}
+
+.app-bar-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: var(--background);
+  box-shadow: 2px 2px var(--on-background);
+  border-radius: 22px;
+}
+
+.app-bar-icon:hover {
+  background-color: var(--secondary);
+  box-shadow: 1px 1px var(--on-background);
+}
+
+.app-bar-icon-theme {
+  filter: var(--header-icon-filter);
+  padding: 4px;
+}
+
+.app-bar-icon-theme:hover {
+  filter: var(--header-icon-filter-hover);
+  padding: 4px;
+}
+
+#header-title {
+  color: var(--background);
+  font-family: "Bowlby One SC", sans-serif, cursive;
+  text-shadow: 3px 3px var(--on-background);
+  line-height: var(
+    --font-size1
+  ); /* fixes the excessive white space between lines in the main header when the Bowlby One SC font splits into multiple lines on smaller screens */
+}
+
+#header-subtitle {
+  color: var(--background);
+  text-shadow: 2px 1px var(--on-background);
+}
+
+/* Responsive page layout for wider screens, i.e. for tables */
+@media (min-width: 540px) {
+  #header-container {
+    background-position-x: 72%;
+  }
+}
+
+/* Responsive page layout for wider screens, i.e. for monitors */
+@media (min-width: 1080px) {
+  #header-container {
+    /*
+            Add spacing before background and then display multiple backgrounds on x-axis.
+            This is the only way I could find using CSS to add spacing in front of the background (370px), while also repeating the backgound on x-axis.
+            Note, using "background-position" and "background-repeat: repeat-x" together doesn't work - it just ignores the spacing in front of the background.
+        */
+    background-image: var(--header-background-image),
+      var(--header-background-image), var(--header-background-image);
+    background-size: auto 250px;
+    background-position: 402px, 1718px, 3034px;
+    background-repeat: no-repeat;
+  }
+}

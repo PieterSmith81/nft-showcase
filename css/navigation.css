@@ -1,0 +1,78 @@
+/* Navigation bar CSS styles */
+#nav-container {
+  grid-area: navigation;
+  display: flex;
+  flex-direction: row;
+  background-color: var(--primary);
+  padding: 8px 16px 8px 16px; /* Shorthand property for setting padding-top, padding-right, padding-bottom, and padding-left in a single declaration (and in a clockwise direction) */
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+}
+
+#nav-ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.nav-li {
+  font-family: "Bowlby One SC", sans-serif, cursive;
+  font-size: var(--font-size3);
+  width: 100%;
+}
+
+.nav-li a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: var(--background);
+  color: var(--on-background);
+  border: 3px solid var(--on-background);
+  padding: 8px 16px 8px 16px; /* Top, right, bottom, left */
+  margin: 2px;
+  text-decoration: none;
+  -webkit-transform: skewX(-10deg);
+  -moz-transform: skewX(-10deg);
+  -o-transform: skewX(-10deg);
+  -ms-transform: skewX(-10deg);
+  transform: skewX(-10deg);
+}
+
+.nav-li a:hover {
+  background-color: var(--on-background);
+  color: var(--background);
+}
+
+.nav-li .nav-active {
+  /* Change the active navigation item's background and make its border thicker to highlight it */
+  background-color: var(--secondary-container);
+  border: 6px solid var(--on-background);
+  padding: 5px 13px 5px 13px; /* Top, right, bottom, left */
+}
+
+/* Responsive page layout for wider screens, i.e. for tables and monitors */
+@media (min-width: 540px) {
+  #nav-container {
+    /*
+        CSS rules below makes the navigation bar sticky. See the "Sticky Navbar" section in the following link for more details:
+        https://www.w3schools.com/css/css_navbar_horizontal.asp;
+    */
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1; /* Ensures that the sticky navigation bar is always on top of all other element */
+  }
+
+  #nav-ul {
+    flex-direction: row;
+    justify-content: left;
+  }
+
+  .nav-li {
+    width: fit-content;
+  }
+}
