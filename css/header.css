@@ -47,7 +47,6 @@
 }
 
 #header-title {
-  color: var(--background);
   font-family: "Bowlby One SC", sans-serif, cursive;
   text-shadow: 3px 3px var(--on-background);
   line-height: var(
@@ -55,9 +54,18 @@
   ); /* fixes the excessive white space between lines in the main header when the Bowlby One SC font splits into multiple lines on smaller screens */
 }
 
-#header-subtitle {
+#header-title a {
   color: var(--background);
+  text-decoration: none;
+}
+
+#header-subtitle {
   text-shadow: 2px 1px var(--on-background);
+}
+
+#header-subtitle a {
+  color: var(--background);
+  text-decoration: none;
 }
 
 /* Responsive page layout for wider screens, i.e. for tables */
