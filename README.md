@@ -1,6 +1,6 @@
 # NFT Showcase
 
-An interactive, responsive landing page showcasing my favourite NFT projects.
+A vibrant, responsive landing page showcasing my favourite NFT projects.
 
 ## Live Website
 
