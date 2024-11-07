@@ -12,7 +12,7 @@ JavaScript, JSDoc, HTML, CSS Grid, Flexbox, media queries
 
 ## Table of Contents
 
-- [Description](#description)
+- [Overview](#overview)
 - [Content](#content)
 - [Usage](#usage)
 - [Special features](#special-features)
@@ -20,7 +20,7 @@ JavaScript, JSDoc, HTML, CSS Grid, Flexbox, media queries
 - [Development](#development)
 - [Dependencies](#dependencies)
 
-## Description
+## Overview
 
 This is my second project in the Udacity front-end web developer course. This project is all about manipulating the Document Object Model (DOM) using JavaScript. We were tasked with creating a landing page, and I have chosen to create a non-fungible token (NFT) project showcase for my landing page.
 
