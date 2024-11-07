@@ -8,7 +8,7 @@ A vibrant, responsive landing page showcasing my favourite NFT projects.
 
 ## Tech Stack
 
-JavaScript, JSDoc, HTML, CSS Grid, Flexbox, media queries
+JavaScript, JSDoc, HTML, CSS Grid, Flexbox, media queries.
 
 ## Table of Contents
 
