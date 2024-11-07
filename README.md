@@ -6,6 +6,10 @@ A vibrant, responsive landing page showcasing my favourite NFT projects.
 
 ### https://pietersmith81.github.io/nft-showcase
 
+## Tech Stack
+
+JavaScript, JSDoc, HTML, CSS Grid, Flexbox, media queries
+
 ## Table of Contents
 
 - [Description](#description)
