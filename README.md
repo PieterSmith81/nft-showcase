@@ -2,7 +2,7 @@
 
 A vibrant, responsive landing page showcasing my favourite NFT projects.
 
-## Live Website
+## Live Demo Website
 
 ### https://pietersmith81.github.io/nft-showcase
 
